@@ -31,7 +31,7 @@ class SimpleChatBot:
 
 
     # CSV 파일 경로
-filepath = 'ChatbotData.csv'
+filepath = 'chatBot\ChatbotData.csv'
     # 챗봇 객체 생성
 chatbot = SimpleChatBot(filepath)
 
