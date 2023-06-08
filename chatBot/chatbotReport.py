@@ -19,8 +19,9 @@ class SimpleChatBot:
         answers = data['A'].tolist()
         return questions, answers
 
-    # 레벤슈타인 거리 계산
+
     def find_best_answer(self, input_text):
+        # 레벤슈타인 거리 계산
         levenshtein_distance = [distance(input_text, question) for question in self.questions]
         # 가장 적합한 답변의 인덱스 찾기
         best_matching_index = np.argmin(levenshtein_distance)
